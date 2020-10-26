@@ -1,0 +1,32 @@
+{
+  "name": "@indra.ai/twitter",
+  "version": "0.1.14",
+  "description": "indra.ai twitter module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:indraai/twitter.git"
+  },
+  "keywords": [
+    "indra.ai",
+    "twitter",
+    "module"
+  ],
+  "author": "Quinn Michaels",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indraai/twitter/issues"
+  },
+  "homepage": "https://github.com/indraai/twitter",
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
+  }
+}
