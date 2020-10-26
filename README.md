@@ -1,6 +1,6 @@
-# Twitter Promise
+# @indra.ai/twitter
 
-Twitter promise is a Class utility for accessing the Twitter API.
+`@indra.ai/twitter` is a Class utility for accessing the Twitter API.
 
 ## installing
 ```console
