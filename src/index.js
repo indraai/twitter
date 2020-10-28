@@ -113,8 +113,8 @@ class Twitter {
 
       // make request to twitter
       this._request(_options, (err, res, data) => {
-        if (err) reject({type:'twitter:request', err});
-				resolve(JSON.parse(data));
+        if (err) return reject({type:'twitter:request', err});
+				return resolve(JSON.parse(data));
 				// data = JSON.parse(data);
 				//
         // // check backoff status of path and resolve or reject based on the end point api status
