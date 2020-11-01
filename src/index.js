@@ -194,7 +194,7 @@ class Twitter {
       }).on("error", err => {
         // response error
         this.events.emit("twitter:stream:error", {type: "RESPONSE", err});
-        this.activeStream.abort();
+        if (this.activeStream) this.activeStream.abort();
       }).on("end", end => {
         // response end
         this.events.emit("twitter:stream:end", {type: 'END', end});
@@ -203,7 +203,7 @@ class Twitter {
     }).on("error", err => {
       // request error
       this.events.emit("twitter:stream:error", {type: "REQUEST", err})
-      this.activeStream.abort();
+      if (this.activeStream) this.activeStream.abort();
     });
 
     this.activeStream.end();
