@@ -1,6 +1,6 @@
 {
   "name": "@indra.ai/twitter",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "indra.ai twitter module",
   "main": "index.js",
   "scripts": {
