@@ -21,9 +21,14 @@ class Twitter {
         token_secret: auth.token_secret,
       },
 			headers: {
-				Accept: "*/*",
-				Connection: "close",
-				"User-Agent": "quinn-" + this.version,
+				'Accept': "*/*",
+				'Connection': "close",
+				'User-Agent': 'Indra.ai https://github.com/indraai/IndraMind',
+				'YouTube': 'https://www.youtube.com/quinnmichaels',
+				'Twitter': 'https://twitter.com/quinnmichaels',
+				'AI-Agent': '#INDRA',
+				'Security-Agent': '#SecurityPRIME 5613487748589',
+				'Referring-Agent': '#TWITTER',
 			}
 		};
 		this._request = request.defaults(this._request_options);
