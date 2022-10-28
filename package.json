@@ -1,5 +1,5 @@
 {
-  "name": "@feecting/twitter",
+  "name": "@indra.ai/twitter",
   "version": "0.2.3",
   "description": "Feecting twitter module",
   "main": "index.js",

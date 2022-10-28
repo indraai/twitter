@@ -1,3 +1,5 @@
+// Copyright (c) 2022 Quinn Michaels
+
 "use strict";
 
 const fs = require("fs");
