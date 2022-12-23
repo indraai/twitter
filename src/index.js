@@ -23,7 +23,7 @@ class Twitter {
 			headers: {
 				'Accept': "*/*",
 				'Connection': "close",
-				'User-Agent': 'Indra.ai https://github.com/indraai/IndraMind',
+				'User-Agent': 'Indra.ai https://indra.ai',
 				'YouTube': 'https://www.youtube.com/quinnmichaels',
 				'Twitter': 'https://twitter.com/quinnmichaels',
 				'AI-Agent': '#INDRA',
@@ -211,7 +211,6 @@ class Twitter {
       if (this.activeStream) this.activeStream.abort();
     });
 
-    this.activeStream.end();
 		return Promise.resolve();
   }
 }
