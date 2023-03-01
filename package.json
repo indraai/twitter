@@ -21,7 +21,9 @@
     "url": "https://github.com/indraai/twitter/issues"
   },
   "homepage": "https://github.com/indraai/twitter",
-  "dependencies": {},
+  "dependencies": {
+    "request": "^2.88.2"
+  },
   "eslintConfig": {
     "parserOptions": {
       "ecmaVersion": 6
