@@ -1,4 +1,4 @@
-// Copyright (c)2020 Quinn Michaels
+// Copyright (c)2023 Quinn Michaels
 
 "use strict"
 
@@ -23,12 +23,7 @@ class Twitter {
 			headers: {
 				'Accept': "*/*",
 				'Connection': "close",
-				'User-Agent': 'Indra.ai https://indra.ai',
-				'YouTube': 'https://www.youtube.com/quinnmichaels',
-				'Twitter': 'https://twitter.com/quinnmichaels',
-				'AI-Agent': '#INDRA',
-				'Security-Agent': '#SecurityPRIME 5613487748589',
-				'Referring-Agent': '#TWITTER',
+				'User-Agent': 'Indra.ai',
 			}
 		};
 		this._request = request.defaults(this._request_options);
@@ -200,6 +195,7 @@ class Twitter {
         // response error
         this.events.emit("twitter:stream:error", {type: "RESPONSE", err});
         if (this.activeStream) this.activeStream.abort();
+
       }).on("end", end => {
         // response end
         this.events.emit("twitter:stream:end", {type: 'END', end});

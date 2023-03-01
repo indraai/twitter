@@ -227,13 +227,14 @@ class TwitterServer extends Twitter {
     });
   }
 
-  status(id) {
+  show(id) {
     return this.get({
       path: 'statuses/show',
       params: {
         id,
         include_entities: true,
         trim_user: false,
+        tweet_mode: 'extended',
       }
     })
   }
@@ -245,6 +246,7 @@ class TwitterServer extends Twitter {
         id,
         include_entities: true,
         trim_user: false,
+        tweet_mode: 'extended',
       }
     })
   }
